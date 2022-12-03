@@ -1,6 +1,5 @@
 # UAP
-Android app infection tool 
-But not all Android applications accept injection
+Application injection tool, but not all applications accept injection 
 
 installation  
 
